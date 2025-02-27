@@ -8,9 +8,9 @@ public class EmployeePayrollData {
     private long salary;
 
     public EmployeePayrollData(int empID, EmployeePayrollDTO employeePayrollDTO) {
-        this.employeeID = employeeID;
-        this.name = name;
-        this.salary = salary;
+        this.employeeID = empID;
+        this.name = employeePayrollDTO.name;
+        this.salary = employeePayrollDTO.salary;
     }
 
     public EmployeePayrollData() {
